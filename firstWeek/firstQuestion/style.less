@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#outer {
+  margin: 30px auto;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+
+  #main {
+    width: 300px;
+    height: 300px;
+    border-spacing: 0px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+    & .col {
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+    }
+
+    & .X {
+      color: black;
+    }
+
+    & .O {
+      color: red;
+    }
+  }
+}
